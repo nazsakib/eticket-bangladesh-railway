@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* navigation bar */
+.navigation__bar {
+    box-shadow: 0 1px 5px -2px gray;
+}
+.navigation__bar img {
+    width: 25%;
+    height: auto;
+}
+.navigation__bar .nav__items ul li a {
+    padding: 0 8px;
+    color: #2c2c2c;
+    font-weight: normal;
+    transition: 0.2s;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid transparent;
+}
+.navigation__bar .nav__items ul li a:hover {
+    border-bottom: 2px solid black;
+}
+.navigation__bar .nav__items .active {
+    padding: 0 8px;
+    border-bottom: 2px solid black;
+}
+
+/* navigation bar ended*/
+
+/* search train aree */
+.search__train .input__field input {
+    padding: 8px 0 8px 8px;
+    transition: 0.2s;
+}
+.search__train .input__button button {
+    background-color: #006747;
+    transition: 0.1s;
+}
+.search__train .input__button button:hover {
+    background-color: #079d49;
+}
+.img__purchase span {
+    color: #006747;
+}
+/* search train area ended */
