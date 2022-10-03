@@ -12,13 +12,16 @@
             rel="shortcut icon"
             href="https://eticket.railway.gov.bd/img/favicon.ico"
             type="image/x-icon" />
+        <script
+            src="https://kit.fontawesome.com/697c0af9d0.js"
+            crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <!-- navigation section area -->
         <section class="navigation__bar">
             <nav
-                class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900">
+                class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 sticky">
                 <div
                     class="container w-2/3 flex flex-wrap justify-between items-center mx-auto">
                     <!-- logo area -->
@@ -61,7 +64,7 @@
                         class="nav__items hidden w-full md:block md:w-auto"
                         id="navbar-default">
                         <ul
-                            class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                            class="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                             <li>
                                 <a
                                     href="#"
@@ -105,7 +108,8 @@
                 class="container w-2/3 mx-auto grid lg:grid-cols-2 md:grid-cols-1 gap-x-12 items-center">
                 <div class="search__input">
                     <!-- input field -->
-                    <div class="input__field w-full grid grid-cols-2 gap-x-8">
+                    <div
+                        class="input__field w-full grid lg:grid-cols-2 md:grid-cols gap-x-8 md:p-4">
                         <!-- input field from area -->
                         <div class="field__from space-y-4">
                             <div class="from__up">
@@ -122,12 +126,18 @@
                             <div class="from__down">
                                 <label
                                     class="flex items-center mb-2 text-sm font-bold text-gray-700"
-                                    for=""
                                     >Date of journey</label
                                 >
                                 <input
+                                    placeholder="Pick a date"
+                                    class="textbox-n outline-0 border border-gray-300 w-full focus:border-blue-500 focus:drop-shadow-xl text-sm rounded-md"
+                                    type="text"
+                                    onfocus="(this.type='date')"
+                                    id="date" />
+
+                                <!-- <input
                                     type="date"
-                                    class="outline-0 border border-gray-300 w-full text-sm rounded-md" />
+                                    class="outline-0 border border-gray-300 w-full focus:border-blue-500 focus:drop-shadow-xl text-sm rounded-md" /> -->
                             </div>
                         </div>
                         <!-- input field from area ended -->
@@ -195,7 +205,7 @@
                                 tickets </span
                             >using online payment method
                         </p>
-                        <ul class="flex items-center gap-x-4 mt-4">
+                        <ul class="flex items-center gap-x-4">
                             <li class="w-10">
                                 <img src="images/bkash.png" alt="" />
                             </li>
@@ -220,54 +230,143 @@
 
         <!-- search select pay -->
         <section class="select__pay py-16">
-            <div
-                class="container grid lg:grid-cols-3 md:grid-cols-3 lg:w-2/3 lg:mx-auto md:w-1/4 md:mx-auto items-center gap-8">
-                <div class="search space-y-6 w-full">
-                    <div class="img">
-                        <img src="images/search.svg" alt="" />
+            <div class="container w-2/3 mx-auto">
+                <div
+                    class="main__part flex flex-col md:flex-row h-screen w-screen m-8 md:m-auto items-center justify-between gap-x-32">
+                    <div class="search px-20">
+                        <div class="img">
+                            <img src="images/search.svg" alt="" width="65%" />
+                        </div>
+                        <div class="text space-y-2">
+                            <h2
+                                class="text-3xl font-bold text-gray-800 tracking-wide">
+                                Search
+                            </h2>
+                            <p class="text-sm text-gray-700 tracking-wide">
+                                Choose your origin, destination, <br />
+                                journey dates and search for trains
+                            </p>
+                        </div>
                     </div>
-                    <div class="text space-y-2">
-                        <h2
-                            class="text-3xl font-bold text-gray-800 tracking-wide">
-                            Search
-                        </h2>
-                        <p class="text-sm text-gray-700 tracking-wide">
-                            Choose your origin, destination, journey dates and
-                            search for trains
-                        </p>
+                    <div class="select px-20">
+                        <div class="img">
+                            <img src="images/select.svg" alt="" width="80%" />
+                        </div>
+                        <div class="text space-y-2">
+                            <h2
+                                class="text-3xl font-bold text-gray-800 tracking-wide">
+                                Select
+                            </h2>
+                            <p class="text-sm text-gray-700 tracking-wide">
+                                Select your desired trip and choose <br />
+                                your seats
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="select space-y-6 w-full">
-                    <div class="img">
-                        <img src="images/select.svg" alt="" />
-                    </div>
-                    <div class="text space-y-2">
-                        <h2
-                            class="text-3xl font-bold text-gray-800 tracking-wide">
-                            Select
-                        </h2>
-                        <p class="text-sm text-gray-700 tracking-wide">
-                            Select your desired trip and choose your seats
-                        </p>
-                    </div>
-                </div>
-                <div class="pay space-y-6 w-full">
-                    <div class="img">
-                        <img src="images/pay.svg" alt="" />
-                    </div>
-                    <div class="text space-y-2">
-                        <h2
-                            class="text-3xl font-bold text-gray-800 tracking-wide">
-                            Pay
-                        </h2>
-                        <p class="text-sm text-gray-700 tracking-wide">
-                            Pay for the tickets via Debit / Credit Cards or MFS
-                        </p>
+                    <div class="pay px-20">
+                        <div class="img">
+                            <img src="images/pay.svg" alt="" width="80%" />
+                        </div>
+                        <div class="text space-y-2">
+                            <h2
+                                class="text-3xl font-bold text-gray-800 tracking-wide">
+                                Pay
+                            </h2>
+                            <p class="text-sm text-gray-700 tracking-wide">
+                                Pay for the tickets via Debit / Credit <br />
+                                Cards or MFS
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- search select pay ended -->
+
+        <!-- purchase instructions area -->
+        <section class="purchase__area py-16">
+            <div class="container w-2/3 mx-auto px-16">
+                <div
+                    class="purchase__main grid lg:grid-cols-2 md:grid-cols items-center justify-around">
+                    <div class="img__side">
+                        <img src="images/instruction-secion-image.png" alt="" />
+                    </div>
+                    <div class="text__side">
+                        <h2 class="text-3xl font-bold tracking-wide py-8">
+                            Instructions to Purchase Tickets
+                        </h2>
+                        <ul>
+                            <li class="flex items-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <p class="text">
+                                    Tickets can be bought online five days in
+                                    advance.
+                                </p>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <p class="text">
+                                    You can pay for the tickets using mobile
+                                    financial services: bKash, Nagad, Rocket or
+                                    debit/credit cards: Mastercard, Visa. Other
+                                    payment options will be available soon.
+                                </p>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <p class="text">
+                                    In case of payment or transaction failure,
+                                    the deducted amount would be refunded by
+                                    your bank or MFS provider within 8 business
+                                    days.
+                                </p>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <p class="text">
+                                    In case money has been deducted from your
+                                    card / mobile wallet but you have not
+                                    received a ticket confirmation, the deducted
+                                    amount would be refunded by your bank or MFS
+                                    provider within 8 business days.
+                                </p>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <p class="text">
+                                    If you have not received your ticket copy in
+                                    email, kindly check your Spam / Junk folder.
+                                    You can also download your ticket copy from
+                                    the purchase history of your account after
+                                    you login.
+                                </p>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <p class="text">
+                                    Download the official
+                                    <a href="#">Rail Sheba</a>
+                                    app published by Bangladesh Railway from
+                                    <a href="#" class="gp">Google Play</a>
+                                    .
+                                </p>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <p class="text">
+                                    In case of passengers downloading fake apps
+                                    or any other app from Google Play which
+                                    claim to sell train tickets of Bangladesh
+                                    Railway, the authorities will not take any
+                                    liability.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- purchase instructions area ended -->
 
         <!-- script -->
     </body>
