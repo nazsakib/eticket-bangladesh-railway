@@ -43,16 +43,44 @@ body {
 .search__train .input__button button:hover {
     background-color: #079d49;
 }
+.search__train .input__field .from__down input {
+    cursor: pointer;
+}
 .img__purchase span {
     color: #006747;
 }
 /* search train area ended */
 
 /* search select pay */
-.select__pay .container .img {
-    width: 100%;
+.select__pay .main__part .img {
+    min-height: 250px;
 }
-.select__pay .container .img img {
-    width: 50%;
+.select__pay .main__part p {
 }
 /* search select pay ended */
+
+/* purchase instructions area */
+.purchase__area .purchase__main .text__side ul li {
+    margin-top: 15px;
+}
+.purchase__area .purchase__main .text__side ul li i {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #006747;
+    color: white;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+.purchase__area .purchase__main .text__side ul li p {
+    color: #013726;
+}
+.purchase__area .purchase__main .text__side ul li p a {
+    color: #013726;
+    font-weight: bolder;
+}
+.purchase__area .purchase__main .text__side ul li p .gp {
+    color: #013726;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+/* purchase instructions area ended */
