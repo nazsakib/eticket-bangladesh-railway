@@ -1,3 +1,10 @@
+/* 
+Author: Sakib MD Nazmush
+Description: Cloning website of Bangladesh Railway. Original site created by Shohoz-Synesis-Vincen JV.
+Date: 3 September, 2022
+Github: https://github.com/nazsakib
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 body {
@@ -84,3 +91,67 @@ body {
     text-decoration: underline;
 }
 /* purchase instructions area ended */
+
+/* payment methods */
+.payment {
+    padding: 15px 0;
+    border-top: 1px solid rgb(148, 148, 148);
+    border-bottom: 1px solid rgb(148, 148, 148);
+}
+.payment__methods {
+    width: 25%;
+    margin: auto;
+    padding: 16px 0;
+}
+.payment__methods .methods {
+    gap: 16px;
+}
+.payment__methods .methods img {
+    width: 100%;
+    margin: auto;
+}
+/* payment methods ended */
+
+/* rules */
+.rules {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+.rules p {
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+    font-size: 12px;
+}
+/* rules ended */
+
+/* footer section */
+.footer__area {
+    border-top: 3px solid #026c4b;
+    padding: 20px;
+}
+.footer__area .container {
+    padding-top: 20px;
+}
+.footer__area .container .left {
+    text-align: center;
+}
+.footer__area .container .left .text__english {
+    font-weight: bold;
+    font-size: 28px;
+    color: #da924e;
+}
+.footer__area .container .left .text__bangla {
+    color: #026c4b;
+    font-size: 14px;
+}
+.footer__area .container .middle {
+    color: #026c4b;
+}
+.footer__area .container .middle a:hover {
+    text-decoration: underline;
+}
+.footer__area .container .right p {
+    color: #026c4b;
+}
+/* footer section ended */
