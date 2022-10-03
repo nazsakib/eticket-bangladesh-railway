@@ -11,7 +11,7 @@ Github: https://github.com/nazsakib
 body {
     font-family: "Roboto", sans-serif;
 }
-
+/**************** HomePage ****************/
 /* navigation bar */
 .navigation__bar {
     box-shadow: 0 1px 5px -2px gray;
@@ -156,3 +156,5 @@ body {
     color: #026c4b;
 }
 /* footer section ended */
+
+/**************** HomePage Ended ****************/
