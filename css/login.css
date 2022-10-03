@@ -1,0 +1,130 @@
+/* 
+Author: Sakib MD Nazmush
+Description: Cloning website of Bangladesh Railway. Original site created by Shohoz-Synesis-Vincen JV.
+Date: 3 September, 2022
+Original Site: eticket.railway.gov.bd
+Github: https://github.com/nazsakib
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+/**************** HomePage ****************/
+/* navigation bar */
+.navigation__bar {
+    box-shadow: 0 1px 5px -2px gray;
+}
+.navigation__bar img {
+    width: 25%;
+    height: auto;
+}
+.navigation__bar .nav__items ul li a {
+    padding: 0 8px;
+    color: #2c2c2c;
+    font-weight: normal;
+    transition: 0.2s;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid transparent;
+}
+.navigation__bar .nav__items ul li a:hover {
+    border-bottom: 2px solid black;
+}
+.navigation__bar .nav__items .active {
+    padding: 0 8px;
+    border-bottom: 2px solid black;
+}
+
+/* navigation bar ended*/
+
+/**************** Login Page ****************/
+body {
+    background-image: url("../images/rail-login.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-color: #e4e9e8;
+}
+.main__area {
+    position: absolute;
+    top: 15%;
+    left: 43%;
+}
+.main__area .text__area {
+    text-align: center;
+    padding: 16px 0 26px 0;
+}
+.main__area .text__area h2 {
+    font-weight: bold;
+    font-size: 28px;
+    color: #da924e;
+}
+.main__area .text__area p {
+    color: #026c4b;
+    font-size: 14px;
+}
+.main__area .form__area {
+    padding: 18px 14px;
+}
+.main__area .form__area .forgot {
+    color: #dd9403;
+}
+.main__area .form__area .help {
+    color: #bfc9da;
+}
+.main__area .form__area .forgot__pass {
+    padding-bottom: 8px;
+}
+.main__area .form__area .input__area {
+    padding: 15px 0;
+}
+.main__area .form__area .input__area input {
+    background: rgb(239, 247, 255);
+    margin: 4px 0;
+    padding-left: 12px;
+    border-radius: 4px;
+    transition: 0.2s;
+    outline: 1px solid transparent;
+}
+.main__area .form__area .input__area input:hover {
+    outline: 1px solid gray;
+}
+.main__area .form__area .input__area button {
+    margin-top: 8px;
+    padding: 8px 0;
+    background-color: #026c4b;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.main__area .form__area .input__area button:hover {
+    background-color: #00b87d;
+}
+.main__area .form__area .register {
+    text-align: center;
+}
+.main__area .form__area p {
+    color: #bfc9da;
+}
+.main__area .form__area .register a {
+    color: #026c4b;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+}
+
+/**************** Login Page Ended ****************/
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .navigation__bar {
+        display: none;
+    }
+    .main__area {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+}
